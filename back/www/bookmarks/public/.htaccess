@@ -1,0 +1,2 @@
+# .htaccess or /etc/apache2/sites-available/000-default.conf
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1

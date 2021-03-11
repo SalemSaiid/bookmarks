@@ -1,0 +1,44 @@
+version: "3.1"
+services:
+    www:
+        container_name: back-container
+        build: ./back
+        ports: 
+            - "8001:80"
+        volumes:
+            - ./back/www:/var/www/html/
+
+    composer:
+        image: composer:latest
+        volumes:
+            - ./back/www:/var/www
+        working_dir: /var/www/bookmarks
+        command: install
+
+    db:
+        container_name: mysql-container
+        image: mysql:8.0
+        ports: 
+            - "3306:3306"
+        command: "--default-authentication-plugin=mysql_native_password"
+        environment:
+            MYSQL_DATABASE: db_bookmarks
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        volumes:
+            - ./back/dump:/docker-entrypoint-initdb.d
+            - persistent:/var/lib/mysql
+    phpmyadmin:
+        container_name: phpmyadmin-container
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+
+volumes:
+    persistent:

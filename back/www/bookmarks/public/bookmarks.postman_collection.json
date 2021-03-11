@@ -1,0 +1,376 @@
+{
+	"id": "72c08e34-ac7d-49bf-adf5-9d32f302e7b0",
+	"name": "bookmarks",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"aa7e7c4d-ef20-467f-b623-bee042ae3d30",
+		"c7c7dede-346f-4a91-9666-33ea0de5b264",
+		"f539b080-dcef-4fd0-8414-66b35c0b3f04",
+		"4f2fe6b5-0057-4c9d-b234-029fd83e9a00",
+		"d1c2fffb-15b0-4d44-ba9d-0da6207cd1a4",
+		"45f5b9f6-b082-478b-a56f-f98b370e7b15",
+		"5d6160a4-3f44-4110-bed2-5cc6d95c0e06",
+		"8efb6656-f6ab-4dd8-bcc3-d262c1b74b5f"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "45f5b9f6-b082-478b-a56f-f98b370e7b15",
+			"name": "Get Images Links",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/image/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4f2fe6b5-0057-4c9d-b234-029fd83e9a00",
+			"name": "Get Videos Links",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/video/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5d6160a4-3f44-4110-bed2-5cc6d95c0e06",
+			"name": "Create Referenced Link",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/referenced-link/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "{\n    \"url\": \"https://www.youtube.com/watch?v=fJeunkTCvWQ\",\n    \"width\": \"1222\",\n    \"height\": \"2222\",\n    \"duration\": \"45\",\n    \"type\": \"video\"\n}",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8efb6656-f6ab-4dd8-bcc3-d262c1b74b5f",
+			"name": "Get Referenced Links",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/referenced-link/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aa7e7c4d-ef20-467f-b623-bee042ae3d30",
+			"name": "Login",
+			"url": "http://localhost:8001/blog/public/index.php/api/login_check",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"username\": \"user3\",\n    \"password\": \"password\"\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "c7c7dede-346f-4a91-9666-33ea0de5b264",
+			"name": "Register",
+			"url": "http://localhost:8001/CARDGAME/public/index.php/api/register",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"username\": \"user4\",\n    \"password\": \"password\",\n    \"email\": \"user4@blog-test.com\"\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "d1c2fffb-15b0-4d44-ba9d-0da6207cd1a4",
+			"name": "Create Image Link",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/image/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "{\n    \"url\": \"https://www.youtube.com/watch?v=fJeunkTCvWQ\",\n    \"width\": \"1222\",\n    \"height\": \"2222\"\n}",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f539b080-dcef-4fd0-8414-66b35c0b3f04",
+			"name": "Create Video Link Copy",
+			"url": "http://localhost:8001/bookmarks/public/index.php/api/video/",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"enabled": false,
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer {{JWTToken}}"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTU0ODAxMzMsImV4cCI6MTYxNTQ4MzczMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.cKs2GBPgtH1lmSk9zAKJa69J6EIJRbbHhxRuVJ1czGReqpL44KXrsEoD9iHJw792bx1wfqXMFyC0biL2dr4x-JWkSS8OjRNRqolbOg7B3DrTxqkXQyTpfTBtpGFxS2TBO2elcV-KfbO3E6uwUOrRM9pROGWYElyeFzx3-4N1ToARlgLVfHYjlfGFgt1r1hShoWZN6gYyJ3qYX0PL9cgVIulFEADS9YQSxxFNldvHtIKN9pEKSaU0SHKIi4vZZhvOLJIbk6Da7tI2k4rRjYhmlPhwKEkULF670tWHfBpu9WIeeib8LpOLdP9o0T8aBd_VKs5LzHc6YDFbMsETYfFo8g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"rawModeData": "{\n    \"url\": \"https://www.youtube.com/watch?v=fJeunkTCvWQ\",\n    \"width\": \"1222\",\n    \"height\": \"2222\",\n    \"duration\": \"45\"\n}",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer {{JWTToken}}\n",
+			"pathVariables": {}
+		}
+	]
+}

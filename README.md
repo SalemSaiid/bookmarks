@@ -1,4 +1,4 @@
-# Card Game test with Docker, Symfony5 and Angular11
+# Bookmaks project test with Docker, Symfony5
 
 This is a simple project (Card Game) 
 
@@ -12,19 +12,9 @@ These instructions apply if you installed:
     # Back:<br>
      - URL phpMyAdmin : http://localhost:8000 
          <br> user: root 
-         <br> password: password  <br>   
+         <br> password: password  <br>  <br>   
          
-     - Unit Tests: 
-                  bin/phpunit<br>
-   # Front:  <br>
-     - URL Project with Angular: http://localhost:9898/<br>
-     - Not Found page: http://localhost:9898/notfound-ozozo<br>
-     - Tests: 
-         npm run lint<br>
-         npm run test<br>
-         npm run e2e<br><br>
-      - Production<br>
-         npm run build    
+     -  Json for Postman : http://localhost:8001/bookmarks/public/bookmarks.postman_collection.json<br>  
      
  # If you need to re-install, run these commands:
  -  docker-compose stop    <br>
